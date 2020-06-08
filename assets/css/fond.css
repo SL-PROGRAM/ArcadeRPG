@@ -1,0 +1,139 @@
+.fond{
+    display: flex;
+    width: calc(856px * 0.8);
+    height: calc(480px * 0.8);
+    margin: 50px;
+    border: black 10px solid;
+    transition: 0.2s;
+}
+
+.text_anim{
+    position: absolute;
+    color: white;
+    font-family: "Agency FB";
+    text-shadow: 2px 2px 2px black;
+    font-size: 25px;
+    top : 47%;
+    left: 44%;
+    animation-duration: 3s;
+    animation-name: animation_texte;
+    width: 30%;
+    z-index: 1;
+}
+
+@keyframes animation_texte{
+    0% {filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        opacity : 0;
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+        width: 15%;
+    }
+    100%{filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        opacity : 1;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        width: 30%;
+    }
+}
+
+
+.fondUnique{
+    display: flex;
+    width: 856px ;
+    height: 480px;
+    margin: 50px;
+}
+
+.fond-1{
+    background-image: url("./../images/fond/fond-1.png");
+    background-size: cover;
+
+}
+
+.fond-2{
+    background-image: url("./../images/fond/fond-2.png");
+    background-size: cover;
+}
+
+.fond-3{
+    background-image: url("./../images/fond/fond-3.png");
+    background-size: cover;
+}
+
+.fond-4{
+    background-image: url("./../images/fond/fond-4.png");
+    background-size: cover;
+}
+
+
+.fond-5{
+    background-image: url("./../images/fond/fond-5.png");
+    background-size: cover;
+}
+
+.fond-6{
+    background-image: url("./../images/fond/fond-6.png");
+    background-size: cover;
+}
+
+.fond-7{
+    background-image: url("./../images/fond/fond-7.png");
+    background-size: cover;
+}
+
+
+.fond-8{
+    background-image: url("./../images/fond/fond-7.png");
+    background-size: cover;
+    will-change: background-image;
+    animation-name: change-cycle ;
+    animation-timing-function: steps(7);
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes change-cycle {
+    0% {
+        background-image: url("./../images/fond/fond-1.png");
+    }
+    15% {
+        background-image: url("./../images/fond/fond-2.png");
+    }
+    30% {
+        background-image: url("./../images/fond/fond-3.png");
+    }
+    45% {
+        background-image: url("./../images/fond/fond-4.png");
+    }
+    60% {
+        background-image: url("./../images/fond/fond-5.png");
+    }
+    75% {
+        background-image: url("./../images/fond/fond-6.png");
+    }
+    90% {
+        background-image: url("./../images/fond/fond-7.png");
+    }
+}
+
+.centerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.fond:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    border: darkblue 10px solid;
+    box-shadow: 1px 1px 1000px darkblue;
+}

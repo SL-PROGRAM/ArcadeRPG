@@ -1,0 +1,23 @@
+.equipe{
+    align-content: space-between;
+    display: flex;
+
+}
+.heros{
+    width: 80%;
+    height: auto;
+    border: white 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1%;
+    min-height: 100px;
+}
+
+
+.titre{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}

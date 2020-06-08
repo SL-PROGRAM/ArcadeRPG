@@ -1,0 +1,103 @@
+.menuJeu{
+    margin: 50px auto;
+    width: 60%;
+    padding: 10px;
+    background-color: #a29ca9;
+    border: darkgray 5px solid;
+}
+
+.action{
+    display: flex;
+    justify-content: space-around;
+}
+
+.titreH2{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: x-large;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+div.menu{
+    min-width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: large;
+    padding: 10px;
+}
+
+h1.menuAction{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn{
+    display: flex;
+    font-family: Arial,sans-serif;
+    font-size: 1.6em;
+    max-width: 10vw;
+    min-width: 8vw;
+    width: 10vw;
+    height: 2vw;
+    padding-top: 7px; /*permet le centrage vertical*/
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 5px auto;
+}
+
+.btn-attaque {
+    color: #000;
+    background: #444;
+    background: linear-gradient( #ffc500, #c21500);
+    border-radius: 10px;
+    text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5), 0 -1px 0 rgba( 255, 255, 255, 0.4);
+
+}
+
+.btn-attaque:hover {
+    color: black;
+    background: #555;
+    background: linear-gradient( #c21500, #333);}
+
+.btn-attaque:active{
+    color: #000;
+    font-weight: bold;
+    background: #444;
+    background: linear-gradient( #c21500, darkred);
+    box-shadow: 1px 1px 10px black inset,
+    0 1px 0 rgba( 255, 255, 255, 0.4);
+}
+
+
+.btn-defense {
+    color: #FFF;
+    background: #444;
+    background: linear-gradient( #3a7bd5, #00d2ff);
+    border-radius: 10px;
+    text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5), 0 -1px 0 rgba( 255, 255, 255, 0.4);
+
+}
+
+.btn-defense:hover {
+    color: darkgray;
+    background: #555;
+    background: linear-gradient( #3a7bd5, #333);}
+
+.btn-defense:active{
+    color: #000;
+    font-weight: bold;
+    background: #444;
+    background: linear-gradient( #3a7bd5, #1f2e4d);
+    box-shadow: 1px 1px 10px white inset,
+    0 1px 0 rgba( 255, 255, 255, 0.4);
+}

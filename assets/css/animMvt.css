@@ -1,0 +1,104 @@
+
+/*animation de l'image '*/
+.attaque-anim {
+    background-image: url("../images/class/Mutant/MutantAttaque.png");
+    background-size: auto 100%;
+    width: calc( 3036px / 12 / 2);
+    height: 125px;
+    will-change: background-position;
+    animation-name: atk-cycle;
+    animation-timing-function: steps(12);
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+/**/
+@keyframes atk-cycle {
+/**/
+    0% {
+        background-position: 0px 0;
+    }
+    100% {
+        background-position: -1518px 0;
+    }
+}
+
+.mort-anim {
+    background-image: url("../images/class/Mutant/MutantMort.png");
+    background-size: auto 100%;
+    width: calc( 2200px / 16);
+    height: 125px;
+    will-change: background-position;
+    animation-name: mort-cycle;
+    animation-timing-function: steps(15);
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mort-cycle {
+    0% {
+        background-position: 0px 0;
+    }
+    100% {
+        background-position: -2063px 0;
+    }
+}
+
+.attente-anim {
+    background-image: url("../images/class/Mutant/MutantVivant.png");
+    background-size: auto 100%;
+    width: calc( 2217px / 31);
+    height: 125px;
+    will-change: background-position;
+    animation-name: attente-cycle;
+    animation-timing-function: steps(31);
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+}
+
+@keyframes attente-cycle {
+
+    100% {
+        background-position: -2217px 0;
+    }
+
+}
+
+
+/*mouvement sur l'ecran'*/
+.bird-container {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: scale(1) translateX(-10vw);
+    will-change: transform;
+
+    animation-name: fly-right-one;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.bird-container--one {
+     animation-duration: 5s;
+     animation-delay: 0s;
+}
+
+
+@keyframes fly-right-one {
+
+    0% {
+        transform: scale(0.3) translateX(-10vw);
+    }
+
+    /*10% {*/
+    /*    transform: translateY(2vh) translateX(10vw) scale(0.4);*/
+    /*}*/
+
+    100% {
+        transform: translateY(50vh) translateX(60vw) scale(0.6);
+    }
+
+}

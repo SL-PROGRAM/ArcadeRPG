@@ -1,0 +1,25 @@
+
+.plateau {
+    position: relative;
+    width: 856px;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.personPosition{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+
+}
+
+nav{
+    height: 100px;
+    width: 100px;
+    background-color: darkblue;
+}
+
+div{
+    font-size: xx-small;
+}
